@@ -11,20 +11,89 @@
   <!-- Header -->
   <header>
     <div class="header-container">
-      <div class="logo">
+      <a href="../" class="logo">
         🌱 HTX
-      </div>
-      <nav>
-        <ul>
-          <li><a href="../">Trang chủ</a></li>
-          <li><a href="gioi-thieu.html">Giới thiệu</a></li>
-          <li><a href="thanh-vien.html">Thành viên</a></li>
-          <li><a href="ho-so-nang-luc.html" class="active">Năng lực</a></li>
-          <li><a href="san-pham.html">Sản phẩm</a></li>
-          <li><a href="lien-he.html">Liên hệ</a></li>
+      </a>
+      <nav class="main-nav">
+        <ul class="nav-menu">
+          <!-- Trang chủ -->
+          <li class="nav-item">
+            <a href="../" class="nav-link">Trang chủ</a>
+          </li>
+
+          <!-- Giới thiệu (có dropdown) -->
+          <li class="nav-item has-dropdown">
+            <a href="gioi-thieu.html" class="nav-link">Giới thiệu</a>
+           HTX
+              <div class="dropdown-content">
+                <a href="gioi-thieu.html" class="dropdown-link">Về chúng tôi</a>
+                <a href="gioi-thieu.html#tam-nhin" class="dropdown-link">Tầm nhìn</a>
+                <a href="gioi-thieu.html#su-menh" class="dropdown-link">Sứ mệnh</a>
+                <a href="ho-so-nang-luc.html" class="dropdown-link">Hồ sơ năng lực</a>
+              </div>
+            </div>
+          </li>
+
+          <!-- Thành viên HTX (có dropdown) -->
+          <li class="nav-item has-dropdown">
+            <a href="thanh-vien.html" class="nav-link">Thành viên HTX</a>
+            <div class="dropdown-menu">
+              <div class="dropdown-content">
+                <a href="thanh-vien.html" class="dropdown-link">Thành viên tiêu biểu</a>
+                <a href="thanh-vien.html#quyen-loi" class="dropdown-link">Quyền lợi thành viên</a>
+              </div>
+            </div>
+          </li>
+
+          <!-- Đối tác (có dropdown) -->
+          <li class="nav-item has-dropdown">
+            <a href="#doi-tac" class="nav-link">Đối tác</a>
+            <div class="dropdown-menu">
+              <div class="dropdown-content">
+                <a href="#doi-tac-cua-chung-toi" class="dropdown-link">Đối tác của chúng tôi</a>
+                <a href="#goi-dau-tu" class="dropdown-link">Các gói đầu tư</a>
+              </div>
+            </div>
+          </li>
+
+          <!-- Sản phẩm & Dịch vụ (có mega menu) -->
+          <li class="nav-item has-dropdown">
+            <a href="san-pham.html" class="nav-link">Sản phẩm & Dịch vụ</a>
+            <div class="dropdown-menu mega-menu">
+              <div class="dropdown-content">
+                <div class="mega-menu-section">
+                  <h4>Sản phẩm</h4>
+                  <a href="san-pham/box-rau.html" class="dropdown-link">Rau, Củ</a>
+                  <a href="san-pham/thanh-phan.html" class="dropdown-link">Trà – Nước cốt</a>
+                </div>
+                <div class="mega-menu-section">
+                  <h4>Dịch vụ</h4>
+                  <a href="#dich-vu-say-thang-hoa" class="dropdown-link">Sấy thăng hoa</a>
+                  <a href="#dich-vu-say" class="dropdown-link">Sấy nóng/lạnh</a>
+                  <a href="#dich-vu-kho-tru" class="dropdown-link">Cấp/Trữ đông</a>
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <!-- Tin tức (có dropdown) -->
+          <li class="nav-item has-dropdown">
+            <a href="#tin-tuc" class="nav-link">Tin tức</a>
+            <div class="dropdown-menu">
+              <div class="dropdown-content">
+                <a href="#tin-tuc-chinh" class="dropdown-link">Tin tức</a>
+                <a href="#su-kien" class="dropdown-link">Sự kiện</a>
+              </div>
+            </div>
+          </li>
+
+          <!-- Liên hệ -->
+          <li class="nav-item">
+            <a href="lien-he.html" class="nav-link">Liên hệ</a>
+          </li>
         </ul>
       </nav>
-      <button class="menu-toggle" aria-label="Toggle menu">
+      <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false">
         <span></span>
         <span></span>
         <span></span>
