@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Thành phần trong Box - Danh mục sản phẩm">
+  <title>Thành phần Box - Hợp tác xã</title>
+  <link rel="stylesheet" href="../../css/styles.css">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="header-container">
+      <div class="logo">
+        🌱 HTX
+      </div>
+      <nav>
+        <ul>
+          <li><a href="../../">Trang chủ</a></li>
+          <li><a href="../gioi-thieu.html">Giới thiệu</a></li>
+          <li><a href="../thanh-vien.html">Thành viên</a></li>
+          <li><a href="../ho-so-nang-luc.html">Năng lực</a></li>
+          <li><a href="../san-pham.html">Sản phẩm</a></li>
+          <li><a href="../lien-he.html">Liên hệ</a></li>
+        </ul>
+      </nav>
+      <button class="menu-toggle" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Breadcrumb -->
+  <section style="background-color: #f8f9fa; padding: 1rem 20px;">
+    <div class="container">
+      <ul class="breadcrumb">
+        <li><a href="../../">Trang chủ</a></li>
+        <li><a href="../san-pham.html">Sản phẩm</a></li>
+        <li>Thành phần Box</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container">
+      <h1>Thành phần trong Box</h1>
+      <p>Khám phá chi tiết các loại rau quả tươi</p>
+    </div>
+  </section>
+
+  <!-- Danh mục & Tìm kiếm -->
+  <section class="bg-white">
+    <div class="container">
+      <div class="row cols-2" style="grid-template-columns: 250px 1fr; gap: 2rem;">
+        <!-- Bộ lọc -->
+        <div>
+          <h3 style="margin-bottom: 1.5rem;">Bộ lọc</h3>
+
+          <div style="margin-bottom: 1.5rem;">
+            <h4 style="margin-bottom: 0.5rem; color: #2c7a3f;">Danh mục</h4>
+            <ul style="list-style: none; padding: 0; margin: 0;">
+              <li style="margin-bottom: 0.5rem;"><a href="#" data-filter="all" class="btn btn-outline active" style="width: 100%; text-align: left; padding: 0.5rem;">Tất cả (50+)</a></li>
+              <li style="margin-bottom: 0.5rem;"><a href="#" data-filter="rau-xanh" class="btn btn-outline" style="width: 100%; text-align: left; padding: 0.5rem;">Rau xanh (12)</a></li>
+              <li style="margin-bottom: 0.5rem;"><a href="#" data-filter="rau-qua" class="btn btn-outline" style="width: 100%; text-align: left; padding: 0.5rem;">Rau quả (15)</a></li>
+              <li style="margin-bottom: 0.5rem;"><a href="#" data-filter="rau-can" class="btn btn-outline" style="width: 100%; text-align: left; padding: 0.5rem;">Rau căn (10)</a></li>
+              <li style="margin-bottom: 0.5rem;"><a href="#" data-filter="trai-cay" class="btn btn-outline" style="width: 100%; text-align: left; padding: 0.5rem;">Trái cây (8)</a></li>
+              <li style="margin-bottom: 0.5rem;"><a href="#" data-filter="nam-thao" class="btn btn-outline" style="width: 100%; text-align: left; padding: 0.5rem;">Nấm & Thảo dược (5)</a></li>
+            </ul>
+          </div>
+
+          <div style="margin-bottom: 1.5rem;">
+            <h4 style="margin-bottom: 0.5rem; color: #2c7a3f;">Mùa vụ</h4>
+            <label style="display: flex; align-items: center; margin-bottom: 0.5rem;">
+              <input type="checkbox" checked> Chính
+            </label>
+            <label style="display: flex; align-items: center; margin-bottom: 0.5rem;">
+              <input type="checkbox"> Cận mùa
+            </label>
+            <label style="display: flex; align-items: center;">
+              <input type="checkbox"> Ngoài mùa
+            </label>
+          </div>
+        </div>
+
+        <!-- Danh sách sản phẩm -->
+        <div>
+          <div style="margin-bottom: 1.5rem;">
+            <input type="search" id="search" placeholder="Tìm kiếm sản phẩm..." style="width: 100%; padding: 0.75rem; border: 1px solid #ddd; border-radius: 4px; font-size: 1rem;">
+          </div>
+
+          <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 1.5rem;">
+            <!-- Product 1 -->
+            <div class="card" data-searchable="Rau muống xanh loại 1" data-category="rau-xanh">
+              <img src="https://via.placeholder.com/200x200?text=Rau+Muống" alt="Rau muống" class="card-img">
+              <div class="card-body">
+                <h4 class="card-title">Rau Muống</h4>
+                <div style="display: flex; justify-content: space-between; margin-bottom: 0.5rem; font-size: 0.85rem; color: #666;">
+                  <span>🌾 Rau xanh</span>
+                  <span>⭐ 4.8</span>
+                </div>
+                <p class="card-text" style="font-size: 0.9rem;">Rau muống tươi xanh, ăn ngon xào hoặc luộc.</p>
+                <a href="#" class="btn btn-primary" style="width: 100%; text-align: center; font-size: 0.85rem; padding: 0.4rem;">Chi tiết</a>
+              </div>
+            </div>
+
+            <!-- Product 2 -->
+            <div class="card" data-searchable="Cà chua đỏ tươi mọng" data-category="rau-qua">
+              <img src="https://via.placeholder.com/200x200?text=Cà+Chua" alt="Cà chua" class="card-img">
+              <div class="card-body">
+                <h4 class="card-title">Cà Chua</h4>
+                <div style="display: flex; justify-content: space-between; margin-bottom: 0.5rem; font-size: 0.85rem; color: #666;">
+                  <span>🥗 Rau quả</span>
+                  <span>⭐ 4.9</span>
+                </div>
+                <p class="card-text" style="font-size: 0.9rem;">Cà chua đỏ ngọt, đầy chất dinh dưỡng.</p>
+                <a href="#" class="btn btn-primary" style="width: 100%; text-align: center; font-size: 0.85rem; padding: 0.4rem;">Chi tiết</a>
+              </div>
+            </div>
+
+            <!-- Product 3 -->
+            <div class="card" data-searchable="Cà rốt cam vàng" data-category="rau-can">
+              <img src="https://via.placeholder.com/200x200?text=Cà+Rốt" alt="Cà rốt" class="card-img">
+              <div class="card-body">
+                <h4 class="card-title">Cà Rốt</h4>
+                <div style="display: flex; justify-content: space-between; margin-bottom: 0.5rem; font-size: 0.85rem; color: #666;">
+                  <span>🥕 Rau căn</span>
+                  <span>⭐ 4.7</span>
+                </div>
+                <p class="card-text" style="font-size: 0.9rem;">Cà rốt Việt Nam ngọt tự nhiên.</p>
+                <a href="#" class="btn btn-primary" style="width: 100%; text-align: center; font-size: 0.85rem; padding: 0.4rem;">Chi tiết</a>
+              </div>
+            </div>
+
+            <!-- Product 4 -->
+            <div class="card" data-searchable="Dưa chuột xanh giòn" data-category="rau-qua">
+              <img src="https://via.placeholder.com/200x200?text=Dưa+Chuột" alt="Dưa chuột" class="card-img">
+              <div class="card-body">
+                <h4 class="card-title">Dưa Chuột</h4>
+                <div style="display: flex; justify-content: space-between; margin-bottom: 0.5rem; font-size: 0.85rem; color: #666;">
+                  <span>🥒 Rau quả</span>
+                  <span>⭐ 4.6</span>
+                </div>
+                <p class="card-text" style="font-size: 0.9rem;">Dưa chuột tươi, giòn, tốt cho tiêu hóa.</p>
+                <a href="#" class="btn btn-primary" style="width: 100%; text-align: center; font-size: 0.85rem; padding: 0.4rem;">Chi tiết</a>
+              </div>
+            </div>
+
+            <!-- Product 5 -->
+            <div class="card" data-searchable="Ớt chuông xanh đỏ vàng" data-category="rau-qua">
+              <img src="https://via.placeholder.com/200x200?text=Ớt+Chuông" alt="Ớt chuông" class="card-img">
+              <div class="card-body">
+                <h4 class="card-title">Ớt Chuông</h4>
+                <div style="display: flex; justify-content: space-between; margin-bottom: 0.5rem; font-size: 0.85rem; color: #666;">
+                  <span>🫑 Rau quả</span>
+                  <span>⭐ 4.8</span>
+                </div>
+                <p class="card-text" style="font-size: 0.9rem;">Ớt chuông đủ màu, giàu vitamin C.</p>
+                <a href="#" class="btn btn-primary" style="width: 100%; text-align: center; font-size: 0.85rem; padding: 0.4rem;">Chi tiết</a>
+              </div>
+            </div>
+
+            <!-- Product 6 -->
+            <div class="card" data-searchable="Cải thảo xanh tươi" data-category="rau-xanh">
+              <img src="https://via.placeholder.com/200x200?text=Cải+Thảo" alt="Cải thảo" class="card-img">
+              <div class="card-body">
+                <h4 class="card-title">Cải Thảo</h4>
+                <div style="display: flex; justify-content: space-between; margin-bottom: 0.5rem; font-size: 0.85rem; color: #666;">
+                  <span>🥬 Rau xanh</span>
+                  <span>⭐ 4.5</span>
+                </div>
+                <p class="card-text" style="font-size: 0.9rem;">Cải thảo Việt Nam, tươi sống mỗi ngày.</p>
+                <a href="#" class="btn btn-primary" style="width: 100%; text-align: center; font-size: 0.85rem; padding: 0.4rem;">Chi tiết</a>
+              </div>
+            </div>
+
+            <!-- Product 7 -->
+            <div class="card" data-searchable="Su hào trắng giòn" data-category="rau-can">
+              <img src="https://via.placeholder.com/200x200?text=Su+Hào" alt="Su hào" class="card-img">
+              <div class="card-body">
+                <h4 class="card-title">Su Hào</h4>
+                <div style="display: flex; justify-content: space-between; margin-bottom: 0.5rem; font-size: 0.85rem; color: #666;">
+                  <span>🥔 Rau căn</span>
+                  <span>⭐ 4.7</span>
+                </div>
+                <p class="card-text" style="font-size: 0.9rem;">Su hào trắng, giòn mọng, tốt cho sức khỏe.</p>
+                <a href="#" class="btn btn-primary" style="width: 100%; text-align: center; font-size: 0.85rem; padding: 0.4rem;">Chi tiết</a>
+              </div>
+            </div>
+
+            <!-- Product 8 -->
+            <div class="card" data-searchable="Hành tây vàng thơm" data-category="rau-can">
+              <img src="https://via.placeholder.com/200x200?text=Hành+Tây" alt="Hành tây" class="card-img">
+              <div class="card-body">
+                <h4 class="card-title">Hành Tây</h4>
+                <div style="display: flex; justify-content: space-between; margin-bottom: 0.5rem; font-size: 0.85rem; color: #666;">
+                  <span>🧅 Rau căn</span>
+                  <span>⭐ 4.6</span>
+                </div>
+                <p class="card-text" style="font-size: 0.9rem;">Hành tây ngọt, gia vị cơ bản cho nhiều món.</p>
+                <a href="#" class="btn btn-primary" style="width: 100%; text-align: center; font-size: 0.85rem; padding: 0.4rem;">Chi tiết</a>
+              </div>
+            </div>
+
+            <!-- Product 9 -->
+            <div class="card" data-searchable="Bắp chuối tươi ngọt" data-category="rau-qua">
+              <img src="https://via.placeholder.com/200x200?text=Bắp+Chuối" alt="Bắp chuối" class="card-img">
+              <div class="card-body">
+                <h4 class="card-title">Bắp Chuối</h4>
+                <div style="display: flex; justify-content: space-between; margin-bottom: 0.5rem; font-size: 0.85rem; color: #666;">
+                  <span>🌽 Rau quả</span>
+                  <span>⭐ 4.8</span>
+                </div>
+                <p class="card-text" style="font-size: 0.9rem;">Bắp chuối tươi, ngọt tự nhiên, giàu năng lượng.</p>
+                <a href="#" class="btn btn-primary" style="width: 100%; text-align: center; font-size: 0.85rem; padding: 0.4rem;">Chi tiết</a>
+              </div>
+            </div>
+
+            <!-- Product 10 -->
+            <div class="card" data-searchable="Khoai tây Đà Lạt ngọt" data-category="rau-can">
+              <img src="https://via.placeholder.com/200x200?text=Khoai+Tây" alt="Khoai tây" class="card-img">
+              <div class="card-body">
+                <h4 class="card-title">Khoai Tây</h4>
+                <div style="display: flex; justify-content: space-between; margin-bottom: 0.5rem; font-size: 0.85rem; color: #666;">
+                  <span>🥔 Rau căn</span>
+                  <span>⭐ 4.9</span>
+                </div>
+                <p class="card-text" style="font-size: 0.9rem;">Khoai tây Đà Lạt, ngọt, dễ nấu, lạnh tốt.</p>
+                <a href="#" class="btn btn-primary" style="width: 100%; text-align: center; font-size: 0.85rem; padding: 0.4rem;">Chi tiết</a>
+              </div>
+            </div>
+
+            <!-- Product 11 -->
+            <div class="card" data-searchable="Dâu tây tươi đỏ" data-category="trai-cay">
+              <img src="https://via.placeholder.com/200x200?text=Dâu+Tây" alt="Dâu tây" class="card-img">
+              <div class="card-body">
+                <h4 class="card-title">Dâu Tây</h4>
+                <div style="display: flex; justify-content: space-between; margin-bottom: 0.5rem; font-size: 0.85rem; color: #666;">
+                  <span>🍓 Trái cây</span>
+                  <span>⭐ 4.9</span>
+                </div>
+                <p class="card-text" style="font-size: 0.9rem;">Dâu tây Đà Lạt, tươi, ngọt, giàu chất dinh dưỡng.</p>
+                <a href="#" class="btn btn-primary" style="width: 100%; text-align: center; font-size: 0.85rem; padding: 0.4rem;">Chi tiết</a>
+              </div>
+            </div>
+
+            <!-- Product 12 -->
+            <div class="card" data-searchable="Cam tươi cam vàng" data-category="trai-cay">
+              <img src="https://via.placeholder.com/200x200?text=Cam" alt="Cam" class="card-img">
+              <div class="card-body">
+                <h4 class="card-title">Cam Tươi</h4>
+                <div style="display: flex; justify-content: space-between; margin-bottom: 0.5rem; font-size: 0.85rem; color: #666;">
+                  <span>🍊 Trái cây</span>
+                  <span>⭐ 4.7</span>
+                </div>
+                <p class="card-text" style="font-size: 0.9rem;">Cam Đà Lạt, ngọt, giàu vitamin C, tốt cho sức khỏe.</p>
+                <a href="#" class="btn btn-primary" style="width: 100%; text-align: center; font-size: 0.85rem; padding: 0.4rem;">Chi tiết</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-content">
+      <div class="footer-section">
+        <h4>📍 Thông tin liên hệ</h4>
+        <p style="margin-bottom: 0.5rem;"><strong>Địa chỉ:</strong> 123 Đường Nông lâm, Quận 1, TP.HCM</p>
+        <p style="margin-bottom: 0.5rem;"><strong>Hotline:</strong> 1800-0000</p>
+        <p><strong>Email:</strong> <a href="mailto:info@htx.vn">info@htx.vn</a></p>
+      </div>
+
+      <div class="footer-section">
+        <h4>🔗 Liên kết nhanh</h4>
+        <ul>
+          <li><a href="../gioi-thieu.html">Giới thiệu</a></li>
+          <li><a href="../thanh-vien.html">Thành viên</a></li>
+          <li><a href="../san-pham.html">Sản phẩm</a></li>
+          <li><a href="../lien-he.html">Liên hệ</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-section">
+        <h4>📄 Chính sách</h4>
+        <ul>
+          <li><a href="#">Điều khoản sử dụng</a></li>
+          <li><a href="#">Chính sách bảo mật</a></li>
+          <li><a href="#">Chính sách hoàn trả</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-section">
+        <h4>🌐 Kết nối</h4>
+        <p>
+          <a href="#">Facebook</a> | 
+          <a href="#">Instagram</a> | 
+          <a href="#">YouTube</a>
+        </p>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2024 Hợp tác xã - Sản phẩm Nông nghiệp Sạch. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="../../js/main.js"></script>
+  <script>
+    // Tìm kiếm sản phẩm
+    const searchInput = document.getElementById('search');
+    if (searchInput) {
+      searchInput.addEventListener('input', (e) => {
+        const keyword = e.target.value.toLowerCase();
+        const products = document.querySelectorAll('[data-searchable]');
+        products.forEach(product => {
+          const text = product.getAttribute('data-searchable').toLowerCase();
+          product.style.display = text.includes(keyword) ? '' : 'none';
+        });
+      });
+    }
+
+    // Lọc theo danh mục
+    document.querySelectorAll('[data-filter]').forEach(btn => {
+      btn.addEventListener('click', (e) => {
+        e.preventDefault();
+        const filter = btn.getAttribute('data-filter');
+        document.querySelectorAll('[data-filter]').forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+
+        const products = document.querySelectorAll('[data-category]');
+        products.forEach(product => {
+          const cat = product.getAttribute('data-category');
+          if (filter === 'all' || cat === filter) {
+            product.style.display = '';
+          } else {
+            product.style.display = 'none';
+          }
+        });
+      });
+    });
+  </script>
+</body>
+</html>

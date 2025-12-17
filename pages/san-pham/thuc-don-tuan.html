@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Thực đơn tuần - Hợp tác xã">
+  <title>Thực đơn Tuần - Hợp tác xã</title>
+  <link rel="stylesheet" href="../../css/styles.css">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="header-container">
+      <div class="logo">
+        🌱 HTX
+      </div>
+      <nav>
+        <ul>
+          <li><a href="../../">Trang chủ</a></li>
+          <li><a href="../gioi-thieu.html">Giới thiệu</a></li>
+          <li><a href="../thanh-vien.html">Thành viên</a></li>
+          <li><a href="../ho-so-nang-luc.html">Năng lực</a></li>
+          <li><a href="../san-pham.html">Sản phẩm</a></li>
+          <li><a href="../lien-he.html">Liên hệ</a></li>
+        </ul>
+      </nav>
+      <button class="menu-toggle" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Breadcrumb -->
+  <section style="background-color: #f8f9fa; padding: 1rem 20px;">
+    <div class="container">
+      <ul class="breadcrumb">
+        <li><a href="../../">Trang chủ</a></li>
+        <li><a href="../san-pham.html">Sản phẩm</a></li>
+        <li>Thực đơn Tuần</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container">
+      <h1>Thực đơn Tuần</h1>
+      <p>Danh sách rau quả tươi cho tuần này</p>
+    </div>
+  </section>
+
+  <!-- Thực đơn tuần hiện tại -->
+  <section class="bg-white">
+    <div class="container">
+      <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 2rem;">
+        <div>
+          <h2>Thực đơn Tuần Này</h2>
+          <p style="color: #666; margin: 0;">Từ 18/12/2024 - 24/12/2024</p>
+        </div>
+        <button class="btn btn-outline" onclick="window.print()">🖨️ In</button>
+      </div>
+
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.5rem; margin-bottom: 2rem;">
+        <!-- Item 1 -->
+        <div class="card">
+          <div style="background-color: #e8f5e9; padding: 1.5rem; text-align: center;">
+            <div style="font-size: 2rem; margin-bottom: 0.5rem;">🥬</div>
+            <h4 style="margin: 0.5rem 0; color: #2c7a3f;">Rau Muống</h4>
+          </div>
+          <div class="card-body">
+            <p style="margin: 0 0 0.5rem 0;"><strong>Loại:</strong> Rau xanh</p>
+            <p style="margin: 0 0 0.5rem 0;"><strong>Vùng:</strong> Đồng Tháp</p>
+            <p style="margin: 0 0 0.5rem 0;"><strong>Khối lượng:</strong> 500g</p>
+            <p style="margin: 0 0 0.5rem 0;"><strong>Mùa vụ:</strong> Giao thừa</p>
+            <p style="color: #666; font-size: 0.9rem; margin: 0;">Rau muống xanh, tươi sống, tuyệt vời cho xào hay canh.</p>
+          </div>
+        </div>
+
+        <!-- Item 2 -->
+        <div class="card">
+          <div style="background-color: #fff3e0; padding: 1.5rem; text-align: center;">
+            <div style="font-size: 2rem; margin-bottom: 0.5rem;">🍅</div>
+            <h4 style="margin: 0.5rem 0; color: #ff6f00;">Cà Chua</h4>
+          </div>
+          <div class="card-body">
+            <p style="margin: 0 0 0.5rem 0;"><strong>Loại:</strong> Rau quả</p>
+            <p style="margin: 0 0 0.5rem 0;"><strong>Vùng:</strong> An Giang</p>
+            <p style="margin: 0 0 0.5rem 0;"><strong>Khối lượng:</strong> 800g</p>
+            <p style="margin: 0 0 0.5rem 0;"><strong>Mùa vụ:</strong> Chính</p>
+            <p style="color: #666; font-size: 0.9rem; margin: 0;">Cà chua đỏ, ngọt, giàu lycopene, tốt cho sức khỏe.</p>
+          </div>
+        </div>
+
+        <!-- Item 3 -->
+        <div class="card">
+          <div style="background-color: #fce4ec; padding: 1.5rem; text-align: center;">
+            <div style="font-size: 2rem; margin-bottom: 0.5rem;">🥕</div>
+            <h4 style="margin: 0.5rem 0; color: #c2185b;">Cà Rốt</h4>
+          </div>
+          <div class="card-body">
+            <p style="margin: 0 0 0.5rem 0;"><strong>Loại:</strong> Rau căn</p>
+            <p style="margin: 0 0 0.5rem 0;"><strong>Vùng:</strong> Bến Tre</p>
+            <p style="margin: 0 0 0.5rem 0;"><strong>Khối lượng:</strong> 600g</p>
+            <p style="margin: 0 0 0.5rem 0;"><strong>Mùa vụ:</strong> Chính</p>
+            <p style="color: #666; font-size: 0.9rem; margin: 0;">Cà rốt tươi, ngọt, tốt cho mắt, có thể xào hoặc nấu canh.</p>
+          </div>
+        </div>
+
+        <!-- Item 4 -->
+        <div class="card">
+          <div style="background-color: #e1f5fe; padding: 1.5rem; text-align: center;">
+            <div style="font-size: 2rem; margin-bottom: 0.5rem;">🥒</div>
+            <h4 style="margin: 0.5rem 0; color: #0277bd;">Dưa Chuột</h4>
+          </div>
+          <div class="card-body">
+            <p style="margin: 0 0 0.5rem 0;"><strong>Loại:</strong> Rau quả</p>
+            <p style="margin: 0 0 0.5rem 0;"><strong>Vùng:</strong> Vũng Tàu</p>
+            <p style="margin: 0 0 0.5rem 0;"><strong>Khối lượng:</strong> 700g</p>
+            <p style="margin: 0 0 0.5rem 0;"><strong>Mùa vụ:</strong> Chính</p>
+            <p style="color: #666; font-size: 0.9rem; margin: 0;">Dưa chuột giòn, tươi mát, tốt cho tiêu hóa và giúp thanh lọc cơ thể.</p>
+          </div>
+        </div>
+
+        <!-- Item 5 -->
+        <div class="card">
+          <div style="background-color: #f3e5f5; padding: 1.5rem; text-align: center;">
+            <div style="font-size: 2rem; margin-bottom: 0.5rem;">🫑</div>
+            <h4 style="margin: 0.5rem 0; color: #6a1b9a;">Ớt Chuông</h4>
+          </div>
+          <div class="card-body">
+            <p style="margin: 0 0 0.5rem 0;"><strong>Loại:</strong> Rau quả</p>
+            <p style="margin: 0 0 0.5rem 0;"><strong>Vùng:</strong> Tây Ninh</p>
+            <p style="margin: 0 0 0.5rem 0;"><strong>Khối lượng:</strong> 500g</p>
+            <p style="margin: 0 0 0.5rem 0;"><strong>Mùa vụ:</strong> Chính</p>
+            <p style="color: #666; font-size: 0.9rem; margin: 0;">Ớt chuông tươi, giàu vitamin C, tốt cho hệ miễn dịch.</p>
+          </div>
+        </div>
+
+        <!-- Item 6 -->
+        <div class="card">
+          <div style="background-color: #e0f2f1; padding: 1.5rem; text-align: center;">
+            <div style="font-size: 2rem; margin-bottom: 0.5rem;">🧅</div>
+            <h4 style="margin: 0.5rem 0; color: #004d40;">Hành Tây</h4>
+          </div>
+          <div class="card-body">
+            <p style="margin: 0 0 0.5rem 0;"><strong>Loại:</strong> Rau căn</p>
+            <p style="margin: 0 0 0.5rem 0;"><strong>Vùng:</strong> Quảng Ngãi</p>
+            <p style="margin: 0 0 0.5rem 0;"><strong>Khối lượng:</strong> 400g</p>
+            <p style="margin: 0 0 0.5rem 0;"><strong>Mùa vụ:</strong> Chính</p>
+            <p style="color: #666; font-size: 0.9rem; margin: 0;">Hành tây tươi, ngọt, là gia vị cơ bản cho nhiều món ăn.</p>
+          </div>
+        </div>
+
+        <!-- Item 7 -->
+        <div class="card">
+          <div style="background-color: #c8e6c9; padding: 1.5rem; text-align: center;">
+            <div style="font-size: 2rem; margin-bottom: 0.5rem;">🥬</div>
+            <h4 style="margin: 0.5rem 0; color: #1b5e20;">Cải Thảo</h4>
+          </div>
+          <div class="card-body">
+            <p style="margin: 0 0 0.5rem 0;"><strong>Loại:</strong> Rau xanh</p>
+            <p style="margin: 0 0 0.5rem 0;"><strong>Vùng:</strong> Đà Lạt</p>
+            <p style="margin: 0 0 0.5rem 0;"><strong>Khối lượng:</strong> 1kg</p>
+            <p style="margin: 0 0 0.5rem 0;"><strong>Mùa vụ:</strong> Chính</p>
+            <p style="color: #666; font-size: 0.9rem; margin: 0;">Cải thảo xanh, giàu chất xơ, tốt cho tiêu hóa.</p>
+          </div>
+        </div>
+
+        <!-- Item 8 -->
+        <div class="card">
+          <div style="background-color: #bbdefb; padding: 1.5rem; text-align: center;">
+            <div style="font-size: 2rem; margin-bottom: 0.5rem;">🥦</div>
+            <h4 style="margin: 0.5rem 0; color: #0d47a1;">Su Hào</h4>
+          </div>
+          <div class="card-body">
+            <p style="margin: 0 0 0.5rem 0;"><strong>Loại:</strong> Rau căn</p>
+            <p style="margin: 0 0 0.5rem 0;"><strong>Vùng:</strong> Đồng Tháp</p>
+            <p style="margin: 0 0 0.5rem 0;"><strong>Khối lượng:</strong> 600g</p>
+            <p style="margin: 0 0 0.5rem 0;"><strong>Mùa vụ:</strong> Chính</p>
+            <p style="color: #666; font-size: 0.9rem; margin: 0;">Su hào giòn, tươi mát, tốt cho tiêu hóa và sức khỏe.</p>
+          </div>
+        </div>
+
+        <!-- Item 9 -->
+        <div class="card">
+          <div style="background-color: #ffe0b2; padding: 1.5rem; text-align: center;">
+            <div style="font-size: 2rem; margin-bottom: 0.5rem;">🌽</div>
+            <h4 style="margin: 0.5rem 0; color: #e65100;">Bắp Chuối</h4>
+          </div>
+          <div class="card-body">
+            <p style="margin: 0 0 0.5rem 0;"><strong>Loại:</strong> Rau quả</p>
+            <p style="margin: 0 0 0.5rem 0;"><strong>Vùng:</strong> Cần Thơ</p>
+            <p style="margin: 0 0 0.5rem 0;"><strong>Khối lượng:</strong> 500g</p>
+            <p style="margin: 0 0 0.5rem 0;"><strong>Mùa vụ:</strong> Chính</p>
+            <p style="color: #666; font-size: 0.9rem; margin: 0;">Bắp chuối tươi, ngọt, giàu năng lượng cho gia đình.</p>
+          </div>
+        </div>
+
+        <!-- Item 10 -->
+        <div class="card">
+          <div style="background-color: #ffccbc; padding: 1.5rem; text-align: center;">
+            <div style="font-size: 2rem; margin-bottom: 0.5rem;">🥔</div>
+            <h4 style="margin: 0.5rem 0; color: #d84315;">Khoai Tây</h4>
+          </div>
+          <div class="card-body">
+            <p style="margin: 0 0 0.5rem 0;"><strong>Loại:</strong> Rau căn</p>
+            <p style="margin: 0 0 0.5rem 0;"><strong>Vùng:</strong> Đà Lạt</p>
+            <p style="margin: 0 0 0.5rem 0;"><strong>Khối lượng:</strong> 800g</p>
+            <p style="margin: 0 0 0.5rem 0;"><strong>Mùa vụ:</strong> Chính</p>
+            <p style="color: #666; font-size: 0.9rem; margin: 0;">Khoai tây Đà Lạt, ngọt, tốt cho sức khỏe, có thể nướng, chiên, xào.</p>
+          </div>
+        </div>
+      </div>
+
+      <div style="padding: 1.5rem; background-color: #f8f9fa; border-radius: 8px; border-left: 4px solid #2c7a3f;">
+        <h4 style="color: #2c7a3f; margin-top: 0;">📝 Ghi chú</h4>
+        <p style="margin: 0; color: #666;">Danh sách trên là thực đơn tiêu biểu. Nội dung có thể thay đổi tùy theo tình hình mùa vụ, thời tiết hoặc tính sẵn có của từng loại rau. Khách hàng sẽ được thông báo nếu có thay đổi.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Lịch sử thực đơn -->
+  <section class="bg-light">
+    <div class="container">
+      <h2 class="text-center mb-4">Lịch sử Thực đơn</h2>
+
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; margin-bottom: 2rem;">
+        <div style="padding: 1rem; background-color: #fff; border-radius: 8px; border-left: 4px solid #2c7a3f;">
+          <h4 style="margin-top: 0;">Tuần 18 - 24/12/2024</h4>
+          <p style="margin: 0.5rem 0 0; color: #666; font-size: 0.9rem;">10 loại rau</p>
+          <a href="#" style="color: #2c7a3f; text-decoration: underline; font-size: 0.9rem;">Xem chi tiết →</a>
+        </div>
+
+        <div style="padding: 1rem; background-color: #fff; border-radius: 8px; border-left: 4px solid #2c7a3f;">
+          <h4 style="margin-top: 0;">Tuần 11 - 17/12/2024</h4>
+          <p style="margin: 0.5rem 0 0; color: #666; font-size: 0.9rem;">11 loại rau</p>
+          <a href="#" style="color: #2c7a3f; text-decoration: underline; font-size: 0.9rem;">Xem chi tiết →</a>
+        </div>
+
+        <div style="padding: 1rem; background-color: #fff; border-radius: 8px; border-left: 4px solid #2c7a3f;">
+          <h4 style="margin-top: 0;">Tuần 4 - 10/12/2024</h4>
+          <p style="margin: 0.5rem 0 0; color: #666; font-size: 0.9rem;">9 loại rau</p>
+          <a href="#" style="color: #2c7a3f; text-decoration: underline; font-size: 0.9rem;">Xem chi tiết →</a>
+        </div>
+
+        <div style="padding: 1rem; background-color: #fff; border-radius: 8px; border-left: 4px solid #2c7a3f;">
+          <h4 style="margin-top: 0;">Tuần 27/11 - 3/12/2024</h4>
+          <p style="margin: 0.5rem 0 0; color: #666; font-size: 0.9rem;">10 loại rau</p>
+          <a href="#" style="color: #2c7a3f; text-decoration: underline; font-size: 0.9rem;">Xem chi tiết →</a>
+        </div>
+      </div>
+
+      <div style="text-align: center;">
+        <a href="#" class="btn btn-outline">Xem tất cả tuần trước →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-content">
+      <div class="footer-section">
+        <h4>📍 Thông tin liên hệ</h4>
+        <p style="margin-bottom: 0.5rem;"><strong>Địa chỉ:</strong> 123 Đường Nông lâm, Quận 1, TP.HCM</p>
+        <p style="margin-bottom: 0.5rem;"><strong>Hotline:</strong> 1800-0000</p>
+        <p><strong>Email:</strong> <a href="mailto:info@htx.vn">info@htx.vn</a></p>
+      </div>
+
+      <div class="footer-section">
+        <h4>🔗 Liên kết nhanh</h4>
+        <ul>
+          <li><a href="../gioi-thieu.html">Giới thiệu</a></li>
+          <li><a href="../thanh-vien.html">Thành viên</a></li>
+          <li><a href="../san-pham.html">Sản phẩm</a></li>
+          <li><a href="../lien-he.html">Liên hệ</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-section">
+        <h4>📄 Chính sách</h4>
+        <ul>
+          <li><a href="#">Điều khoản sử dụng</a></li>
+          <li><a href="#">Chính sách bảo mật</a></li>
+          <li><a href="#">Chính sách hoàn trả</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-section">
+        <h4>🌐 Kết nối</h4>
+        <p>
+          <a href="#">Facebook</a> | 
+          <a href="#">Instagram</a> | 
+          <a href="#">YouTube</a>
+        </p>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2024 Hợp tác xã - Sản phẩm Nông nghiệp Sạch. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="../../js/main.js"></script>
+</body>
+</html>

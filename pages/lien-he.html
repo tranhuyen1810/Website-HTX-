@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Liên hệ - Hợp tác xã">
+  <title>Liên hệ - Hợp tác xã</title>
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="header-container">
+      <div class="logo">
+        🌱 HTX
+      </div>
+      <nav>
+        <ul>
+          <li><a href="../">Trang chủ</a></li>
+          <li><a href="gioi-thieu.html">Giới thiệu</a></li>
+          <li><a href="thanh-vien.html">Thành viên</a></li>
+          <li><a href="ho-so-nang-luc.html">Năng lực</a></li>
+          <li><a href="san-pham.html">Sản phẩm</a></li>
+          <li><a href="lien-he.html" class="active">Liên hệ</a></li>
+        </ul>
+      </nav>
+      <button class="menu-toggle" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Breadcrumb -->
+  <section style="background-color: #f8f9fa; padding: 1rem 20px;">
+    <div class="container">
+      <ul class="breadcrumb">
+        <li><a href="../">Trang chủ</a></li>
+        <li>Liên hệ</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container">
+      <h1>Liên hệ với chúng tôi</h1>
+      <p>Chúng tôi sẵn sàng hỗ trợ bạn 24/7</p>
+    </div>
+  </section>
+
+  <!-- Thông tin liên hệ -->
+  <section class="bg-white">
+    <div class="container">
+      <div class="row cols-2" style="grid-template-columns: 1fr 1fr;">
+        <!-- Thông tin -->
+        <div>
+          <h2 style="margin-bottom: 1.5rem;">Thông tin Liên hệ</h2>
+
+          <div style="margin-bottom: 2rem;">
+            <h4 style="color: #2c7a3f; margin-bottom: 0.5rem;">📍 Trụ sở chính</h4>
+            <p style="margin: 0;">123 Đường Nông lâm, Phường 1, Quận 1, TP.HCM</p>
+          </div>
+
+          <div style="margin-bottom: 2rem;">
+            <h4 style="color: #2c7a3f; margin-bottom: 0.5rem;">☎️ Hotline</h4>
+            <p style="margin: 0;"><strong>1800-0000</strong> (8:00 - 17:00, Thứ 2 - Thứ 6)</p>
+            <p style="margin-top: 0.5rem; color: #666; font-size: 0.9rem;">Hỗ trợ đặt hàng, tư vấn sản phẩm, giải đáp thắc mắc</p>
+          </div>
+
+          <div style="margin-bottom: 2rem;">
+            <h4 style="color: #2c7a3f; margin-bottom: 0.5rem;">📧 Email</h4>
+            <p style="margin: 0;">
+              <strong>info@htx.vn</strong> - Thông tin chung<br>
+              <strong>order@htx.vn</strong> - Đặt hàng<br>
+              <strong>support@htx.vn</strong> - Hỗ trợ kỹ thuật
+            </p>
+          </div>
+
+          <div style="margin-bottom: 2rem;">
+            <h4 style="color: #2c7a3f; margin-bottom: 0.5rem;">🕒 Giờ làm việc</h4>
+            <ul style="margin: 0; margin-left: 1rem;">
+              <li><strong>Thứ 2 - Thứ 6:</strong> 8:00 - 17:00</li>
+              <li><strong>Thứ 7:</strong> 8:00 - 12:00</li>
+              <li><strong>Chủ nhật:</strong> Nghỉ</li>
+            </ul>
+          </div>
+
+          <div style="margin-bottom: 2rem;">
+            <h4 style="color: #2c7a3f; margin-bottom: 0.5rem;">🌐 Mạng xã hội</h4>
+            <p style="margin: 0;">
+              <a href="#">Facebook</a> | 
+              <a href="#">Instagram</a> | 
+              <a href="#">YouTube</a> | 
+              <a href="#">Zalo</a>
+            </p>
+          </div>
+        </div>
+
+        <!-- Form liên hệ -->
+        <div>
+          <h2 style="margin-bottom: 1.5rem;">Gửi thông điệp</h2>
+          <form id="contactForm" class="contact-form">
+            <!-- Honeypot (anti-spam) -->
+            <input type="text" name="website" style="display: none;">
+
+            <div class="form-group">
+              <label for="name">Họ tên *</label>
+              <input type="text" id="name" name="name" required>
+            </div>
+
+            <div class="form-group">
+              <label for="email">Email *</label>
+              <input type="email" id="email" name="email" required>
+            </div>
+
+            <div class="form-group">
+              <label for="phone">Số điện thoại *</label>
+              <input type="tel" id="phone" name="phone" required>
+            </div>
+
+            <div class="form-group">
+              <label for="subject">Chủ đề *</label>
+              <select id="subject" name="subject" required>
+                <option value="">-- Chọn chủ đề --</option>
+                <option value="dat-box">Đặt box rau</option>
+                <option value="ho-tro">Hỗ trợ khách hàng</option>
+                <option value="hop-tac">Hợp tác kinh doanh</option>
+                <option value="danh-gia">Đánh giá & Phản hồi</option>
+                <option value="khac">Khác</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="message">Nội dung *</label>
+              <textarea id="message" name="message" required placeholder="Vui lòng nhập nội dung của bạn..."></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary" style="width: 100%;">Gửi thông điệp</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Bản đồ -->
+  <section class="bg-light">
+    <div class="container">
+      <h2 class="text-center" style="margin-bottom: 2rem;">Vị trí chúng tôi</h2>
+      
+      <!-- Map placeholder -->
+      <div style="width: 100%; height: 400px; background-color: #e0e0e0; border-radius: 8px; display: flex; align-items: center; justify-content: center;">
+        <div style="text-align: center;">
+          <div style="font-size: 3rem; margin-bottom: 1rem;">📍</div>
+          <p>Google Maps: 123 Đường Nông lâm, Q1, TP.HCM</p>
+          <p style="color: #999; font-size: 0.9rem;">[Nhúng bản đồ Google Maps ở đây]</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="bg-white">
+    <div class="container">
+      <h2 class="text-center mb-4">Câu hỏi thường gặp (FAQ)</h2>
+
+      <div style="max-width: 800px; margin: 0 auto;">
+        <!-- FAQ 1 -->
+        <div class="accordion-item active">
+          <div class="accordion-header">
+            <span>❓ Làm cách nào để đặt box rau?</span>
+            <span class="accordion-icon"></span>
+          </div>
+          <div class="accordion-body active">
+            <p>Bạn có thể đặt box rau thông qua các cách sau:</p>
+            <ul style="margin-left: 1rem;">
+              <li>Gọi hotline: 1800-0000</li>
+              <li>Gửi email: order@htx.vn</li>
+              <li>Truy cập website và điền form đặt hàng</li>
+              <li>Chat với chúng tôi trên Facebook hoặc Zalo</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- FAQ 2 -->
+        <div class="accordion-item">
+          <div class="accordion-header">
+            <span>❓ Rau của bạn có tươi không?</span>
+            <span class="accordion-icon"></span>
+          </div>
+          <div class="accordion-body">
+            <p>Rau của chúng tôi được thu hoạch vào sáng và giao hàng trong vòng 24 giờ, đảm bảo tươi sống. Chúng tôi sử dụng hệ thống lạnh hiện đại để bảo quản chất lượng.</p>
+          </div>
+        </div>
+
+        <!-- FAQ 3 -->
+        <div class="accordion-item">
+          <div class="accordion-header">
+            <span>❓ Giá cả của box rau là bao nhiêu?</span>
+            <span class="accordion-icon"></span>
+          </div>
+          <div class="accordion-body">
+            <p>Box rau 7kg/tuần có giá từ 120.000đ - 150.000đ tùy theo mùa vụ. Chúng tôi cũng có các gói subscription với giá ưu đãi hàng tháng. Liên hệ để nhận báo giá chi tiết.</p>
+          </div>
+        </div>
+
+        <!-- FAQ 4 -->
+        <div class="accordion-item">
+          <div class="accordion-header">
+            <span>❓ Giao hàng phạm vi nào?</span>
+            <span class="accordion-icon"></span>
+          </div>
+          <div class="accordion-body">
+            <p>Chúng tôi giao hàng toàn TP.HCM (24 quận/huyện) và lân cận: Bình Dương, Đồng Nai, Vũng Tàu. Phí giao hàng tùy theo khu vực. Vui lòng gọi hotline để xác nhận.</p>
+          </div>
+        </div>
+
+        <!-- FAQ 5 -->
+        <div class="accordion-item">
+          <div class="accordion-header">
+            <span>❓ Có chứng nhận chất lượng không?</span>
+            <span class="accordion-icon"></span>
+          </div>
+          <div class="accordion-body">
+            <p>Có! Tất cả sản phẩm của chúng tôi được chứng nhận VietGAP, GlobalGAP, HACCP và được kiểm định hàng tuần bởi phòng thí nghiệm độc lập. Bạn có thể yêu cầu chứng chỉ qua email.</p>
+          </div>
+        </div>
+
+        <!-- FAQ 6 -->
+        <div class="accordion-item">
+          <div class="accordion-header">
+            <span>❓ Chính sách hoàn trả là gì?</span>
+            <span class="accordion-icon"></span>
+          </div>
+          <div class="accordion-body">
+            <p>Nếu sản phẩm không đạt chất lượng, bạn có thể hoàn trả trong vòng 24 giờ. Chúng tôi sẽ hoàn tiền hoặc giao hàng lại. Vui lòng liên hệ support@htx.vn ngay.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="bg-light">
+    <div class="container text-center">
+      <h2 style="margin-bottom: 1rem;">Bạn có câu hỏi khác?</h2>
+      <p style="color: #666; margin-bottom: 1.5rem;">Đây là những câu hỏi phổ biến, nhưng chúng tôi sẵn sàng trả lời bất kỳ thắc mắc nào của bạn.</p>
+      <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+        <a href="tel:1800-0000" class="btn btn-primary">📞 Gọi ngay</a>
+        <a href="mailto:info@htx.vn" class="btn btn-outline">✉️ Gửi email</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-content">
+      <div class="footer-section">
+        <h4>📍 Thông tin liên hệ</h4>
+        <p style="margin-bottom: 0.5rem;"><strong>Địa chỉ:</strong> 123 Đường Nông lâm, Quận 1, TP.HCM</p>
+        <p style="margin-bottom: 0.5rem;"><strong>Hotline:</strong> 1800-0000</p>
+        <p><strong>Email:</strong> <a href="mailto:info@htx.vn">info@htx.vn</a></p>
+      </div>
+
+      <div class="footer-section">
+        <h4>🔗 Liên kết nhanh</h4>
+        <ul>
+          <li><a href="gioi-thieu.html">Giới thiệu</a></li>
+          <li><a href="thanh-vien.html">Thành viên</a></li>
+          <li><a href="san-pham.html">Sản phẩm</a></li>
+          <li><a href="lien-he.html">Liên hệ</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-section">
+        <h4>📄 Chính sách</h4>
+        <ul>
+          <li><a href="#">Điều khoản sử dụng</a></li>
+          <li><a href="#">Chính sách bảo mật</a></li>
+          <li><a href="#">Chính sách hoàn trả</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-section">
+        <h4>🌐 Kết nối</h4>
+        <p>
+          <a href="#">Facebook</a> | 
+          <a href="#">Instagram</a> | 
+          <a href="#">YouTube</a>
+        </p>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2024 Hợp tác xã - Sản phẩm Nông nghiệp Sạch. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>

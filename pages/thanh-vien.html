@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Danh sách thành viên Hợp tác xã">
+  <title>Thành viên - Hợp tác xã</title>
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="header-container">
+      <div class="logo">
+        🌱 HTX
+      </div>
+      <nav>
+        <ul>
+          <li><a href="../">Trang chủ</a></li>
+          <li><a href="gioi-thieu.html">Giới thiệu</a></li>
+          <li><a href="thanh-vien.html" class="active">Thành viên</a></li>
+          <li><a href="ho-so-nang-luc.html">Năng lực</a></li>
+          <li><a href="san-pham.html">Sản phẩm</a></li>
+          <li><a href="lien-he.html">Liên hệ</a></li>
+        </ul>
+      </nav>
+      <button class="menu-toggle" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Breadcrumb -->
+  <section style="background-color: #f8f9fa; padding: 1rem 20px;">
+    <div class="container">
+      <ul class="breadcrumb">
+        <li><a href="../">Trang chủ</a></li>
+        <li>Thành viên</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container">
+      <h1>Thành viên Hợp tác xã</h1>
+      <p>Hơn 500 nông hộ hợp tác phát triển bền vững</p>
+    </div>
+  </section>
+
+  <!-- Danh sách thành viên -->
+  <section class="bg-white">
+    <div class="container">
+      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; margin-bottom: 2rem;">
+        <div>
+          <h3>Lọc thành viên</h3>
+          <form style="display: flex; flex-direction: column; gap: 1rem;">
+            <div class="form-group">
+              <label for="region">Vùng/Nhóm sản xuất</label>
+              <select id="region">
+                <option value="all">-- Tất cả --</option>
+                <option value="mekong">Đồng bằng sông Cửu Long</option>
+                <option value="midland">Tây Nguyên</option>
+                <option value="southcoast">Nam Trung Bộ</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="search">Tìm kiếm thành viên</label>
+              <input type="search" id="search" placeholder="Nhập tên nông hộ..." data-searchable-container="members-list">
+            </div>
+          </form>
+        </div>
+
+        <div>
+          <h3>Thông tin</h3>
+          <p>Danh sách dưới đây là những nông hộ thành viên chính thức của hợp tác xã. Các thành viên đều cam kết tuân thủ các tiêu chuẩn chất lượng và sản xuất bền vững.</p>
+          <p><strong>Cách sắp xếp:</strong> Theo tên thành viên (A-Z)</p>
+        </div>
+      </div>
+
+      <h2 style="margin-bottom: 1.5rem;">Danh sách 12 thành viên tiêu biểu</h2>
+      
+      <div id="members-list" class="row cols-3">
+        <!-- Member 1 -->
+        <div class="card" data-searchable="Nông hộ Anh Sáu - Rau sạch Đồng Tháp">
+          <div style="background: linear-gradient(135deg, #2c7a3f, #1a4d25); color: #fff; padding: 1.5rem;">
+            <div style="font-size: 2rem; margin-bottom: 0.5rem;">👨‍🌾</div>
+            <h4 style="margin: 0; color: #fff;">Nông hộ Anh Sáu</h4>
+            <p style="margin: 0.5rem 0 0; color: #d0e8d9; font-size: 0.9rem;">Đồng bằng sông Cửu Long</p>
+          </div>
+          <div class="card-body">
+            <p style="margin: 0 0 0.5rem 0;"><strong>Vùng:</strong> Đồng Tháp</p>
+            <p style="margin: 0 0 0.5rem 0;"><strong>Sản phẩm chính:</strong> Rau xanh, cải, ớt</p>
+            <p style="color: #666; font-size: 0.95rem;">Nông hộ gia đình sản xuất rau sạch theo tiêu chuẩn VietGAP, chuyên cung cấp các loại rau lá xanh tươi.</p>
+            <a href="#" class="btn btn-primary" style="width: 100%; text-align: center; margin-top: 1rem; font-size: 0.9rem;">Xem hồ sơ</a>
+          </div>
+        </div>
+
+        <!-- Member 2 -->
+        <div class="card" data-searchable="Nông hộ Bà Ba - Cà chua hữu cơ An Giang">
+          <div style="background: linear-gradient(135deg, #f44336, #e53935); color: #fff; padding: 1.5rem;">
+            <div style="font-size: 2rem; margin-bottom: 0.5rem;">👩‍🌾</div>
+            <h4 style="margin: 0; color: #fff;">Nông hộ Bà Ba</h4>
+            <p style="margin: 0.5rem 0 0; color: #ffcdd2; font-size: 0.9rem;">Đồng bằng sông Cửu Long</p>
+          </div>
+          <div class="card-body">
+            <p style="margin: 0 0 0.5rem 0;"><strong>Vùng:</strong> An Giang</p>
+            <p style="margin: 0 0 0.5rem 0;"><strong>Sản phẩm chính:</strong> Cà chua, dưa chuột</p>
+            <p style="color: #666; font-size: 0.95rem;">Chuyên sản xuất cà chua hữu cơ và các loại rau quả sạch, được chứng nhận tiêu chuẩn GlobalGAP.</p>
+            <a href="#" class="btn btn-primary" style="width: 100%; text-align: center; margin-top: 1rem; font-size: 0.9rem;">Xem hồ sơ</a>
+          </div>
+        </div>
+
+        <!-- Member 3 -->
+        <div class="card" data-searchable="Tổ hợp tác Duy Tân - Nông sản đa dạng Cần Thơ">
+          <div style="background: linear-gradient(135deg, #2196F3, #1976D2); color: #fff; padding: 1.5rem;">
+            <div style="font-size: 2rem; margin-bottom: 0.5rem;">🏢</div>
+            <h4 style="margin: 0; color: #fff;">Tổ hợp tác Duy Tân</h4>
+            <p style="margin: 0.5rem 0 0; color: #bbdefb; font-size: 0.9rem;">Đồng bằng sông Cửu Long</p>
+          </div>
+          <div class="card-body">
+            <p style="margin: 0 0 0.5rem 0;"><strong>Vùng:</strong> Cần Thơ</p>
+            <p style="margin: 0 0 0.5rem 0;"><strong>Sản phẩm chính:</strong> Rau đa dạng, trái cây</p>
+            <p style="color: #666; font-size: 0.95rem;">Tổ hợp tác gồm 50 nông hộ, sản xuất rau quả theo mùa vụ, cung cấp cho các siêu thị lớn.</p>
+            <a href="#" class="btn btn-primary" style="width: 100%; text-align: center; margin-top: 1rem; font-size: 0.9rem;">Xem hồ sơ</a>
+          </div>
+        </div>
+
+        <!-- Member 4 -->
+        <div class="card" data-searchable="Nông hộ Chí Cường - Rau sạch Bến Tre">
+          <div style="background: linear-gradient(135deg, #9C27B0, #7B1FA2); color: #fff; padding: 1.5rem;">
+            <div style="font-size: 2rem; margin-bottom: 0.5rem;">🥕</div>
+            <h4 style="margin: 0; color: #fff;">Nông hộ Chí Cường</h4>
+            <p style="margin: 0.5rem 0 0; color: #e1bee7; font-size: 0.9rem;">Đồng bằng sông Cửu Long</p>
+          </div>
+          <div class="card-body">
+            <p style="margin: 0 0 0.5rem 0;"><strong>Vùng:</strong> Bến Tre</p>
+            <p style="margin: 0 0 0.5rem 0;"><strong>Sản phẩm chính:</strong> Cà rốt, su hào, bắp</p>
+            <p style="color: #666; font-size: 0.95rem;">Sản xuất rau sạch theo công nghệ canh tác hữu cơ, cung cấp hàng tuần cho các cửa hàng thực phẩm sạch.</p>
+            <a href="#" class="btn btn-primary" style="width: 100%; text-align: center; margin-top: 1rem; font-size: 0.9rem;">Xem hồ sơ</a>
+          </div>
+        </div>
+
+        <!-- Member 5 -->
+        <div class="card" data-searchable="Nông hộ Tây Sơn - Nông sản Tây Ninh">
+          <div style="background: linear-gradient(135deg, #FF9800, #F57C00); color: #fff; padding: 1.5rem;">
+            <div style="font-size: 2rem; margin-bottom: 0.5rem;">🥬</div>
+            <h4 style="margin: 0; color: #fff;">Nông hộ Tây Sơn</h4>
+            <p style="margin: 0.5rem 0 0; color: #ffe0b2; font-size: 0.9rem;">Vùng lân cận</p>
+          </div>
+          <div class="card-body">
+            <p style="margin: 0 0 0.5rem 0;"><strong>Vùng:</strong> Tây Ninh</p>
+            <p style="margin: 0 0 0.5rem 0;"><strong>Sản phẩm chính:</strong> Ớt, cà tím, bí ngô</p>
+            <p style="color: #666; font-size: 0.95rem;">Nông hộ đa dạng hóa sản phẩm, cung cấp ớt chất lượng cao cho các nhà hàng và cơ sở chế biến.</p>
+            <a href="#" class="btn btn-primary" style="width: 100%; text-align: center; margin-top: 1rem; font-size: 0.9rem;">Xem hồ sơ</a>
+          </div>
+        </div>
+
+        <!-- Member 6 -->
+        <div class="card" data-searchable="Tổ hợp tác Núi Đối - Rau Đà Lạt">
+          <div style="background: linear-gradient(135deg, #4CAF50, #388E3C); color: #fff; padding: 1.5rem;">
+            <div style="font-size: 2rem; margin-bottom: 0.5rem;">🌾</div>
+            <h4 style="margin: 0; color: #fff;">Tổ hợp tác Núi Đối</h4>
+            <p style="margin: 0.5rem 0 0; color: #c8e6c9; font-size: 0.9rem;">Tây Nguyên</p>
+          </div>
+          <div class="card-body">
+            <p style="margin: 0 0 0.5rem 0;"><strong>Vùng:</strong> Đà Lạt</p>
+            <p style="margin: 0 0 0.5rem 0;"><strong>Sản phẩm chính:</strong> Rau Đà Lạt, dâu tây, khoai tây</p>
+            <p style="color: #666; font-size: 0.95rem;">Tổ hợp tác 30 nông hộ sản xuất rau Đà Lạt nổi tiếng, cung cấp cho toàn quốc.</p>
+            <a href="#" class="btn btn-primary" style="width: 100%; text-align: center; margin-top: 1rem; font-size: 0.9rem;">Xem hồ sơ</a>
+          </div>
+        </div>
+
+        <!-- Thêm 6 member khác với cấu trúc tương tự -->
+        <div class="card" data-searchable="Nông hộ Minh Phúc - Rau sạch Vũng Tàu">
+          <div style="background: linear-gradient(135deg, #3F51B5, #303F9F); color: #fff; padding: 1.5rem;">
+            <div style="font-size: 2rem; margin-bottom: 0.5rem;">🥒</div>
+            <h4 style="margin: 0; color: #fff;">Nông hộ Minh Phúc</h4>
+            <p style="margin: 0.5rem 0 0; color: #c5cae9; font-size: 0.9rem;">Vùng lân cận</p>
+          </div>
+          <div class="card-body">
+            <p style="margin: 0 0 0.5rem 0;"><strong>Vùng:</strong> Vũng Tàu</p>
+            <p style="margin: 0 0 0.5rem 0;"><strong>Sản phẩm chính:</strong> Dưa chuột, rau sạch</p>
+            <p style="color: #666; font-size: 0.95rem;">Nông hộ sản xuất dưa chuột sạch theo công nghệ nhà kính, cung cấp cho các siêu thị.</p>
+            <a href="#" class="btn btn-primary" style="width: 100%; text-align: center; margin-top: 1rem; font-size: 0.9rem;">Xem hồ sơ</a>
+          </div>
+        </div>
+
+        <div class="card" data-searchable="Tổ hợp tác Xanh Lợi - Rau trồng thủy canh Bình Dương">
+          <div style="background: linear-gradient(135deg, #00BCD4, #0097A7); color: #fff; padding: 1.5rem;">
+            <div style="font-size: 2rem; margin-bottom: 0.5rem;">💧</div>
+            <h4 style="margin: 0; color: #fff;">Tổ hợp tác Xanh Lợi</h4>
+            <p style="margin: 0.5rem 0 0; color: #b2ebf2; font-size: 0.9rem;">Vùng lân cận</p>
+          </div>
+          <div class="card-body">
+            <p style="margin: 0 0 0.5rem 0;"><strong>Vùng:</strong> Bình Dương</p>
+            <p style="margin: 0 0 0.5rem 0;"><strong>Sản phẩm chính:</strong> Rau thủy canh</p>
+            <p style="color: #666; font-size: 0.95rem;">Sản xuất rau thủy canh hiện đại, không sử dụng đất, giảm sử dụng nước so với trồng truyền thống.</p>
+            <a href="#" class="btn btn-primary" style="width: 100%; text-align: center; margin-top: 1rem; font-size: 0.9rem;">Xem hồ sơ</a>
+          </div>
+        </div>
+
+        <div class="card" data-searchable="Nông hộ Thạch Sơn - Rau organic Phú Yên">
+          <div style="background: linear-gradient(135deg, #009688, #00796B); color: #fff; padding: 1.5rem;">
+            <div style="font-size: 2rem; margin-bottom: 0.5rem;">🥦</div>
+            <h4 style="margin: 0; color: #fff;">Nông hộ Thạch Sơn</h4>
+            <p style="margin: 0.5rem 0 0; color: #b2dfdb; font-size: 0.9rem;">Nam Trung Bộ</p>
+          </div>
+          <div class="card-body">
+            <p style="margin: 0 0 0.5rem 0;"><strong>Vùng:</strong> Phú Yên</p>
+            <p style="margin: 0 0 0.5rem 0;"><strong>Sản phẩm chính:</strong> Rau organic, trái cây</p>
+            <p style="color: #666; font-size: 0.95rem;">Sản xuất rau hữu cơ chứng nhận, cam kết không sử dụng thuốc trừ sâu hoá học.</p>
+            <a href="#" class="btn btn-primary" style="width: 100%; text-align: center; margin-top: 1rem; font-size: 0.9rem;">Xem hồ sơ</a>
+          </div>
+        </div>
+
+        <div class="card" data-searchable="Nông hộ Xuân Hải - Rau sạch Quảng Ngãi">
+          <div style="background: linear-gradient(135deg, #FF5722, #D84315); color: #fff; padding: 1.5rem;">
+            <div style="font-size: 2rem; margin-bottom: 0.5rem;">🧅</div>
+            <h4 style="margin: 0; color: #fff;">Nông hộ Xuân Hải</h4>
+            <p style="margin: 0.5rem 0 0; color: #ffccbc; font-size: 0.9rem;">Nam Trung Bộ</p>
+          </div>
+          <div class="card-body">
+            <p style="margin: 0 0 0.5rem 0;"><strong>Vùng:</strong> Quảng Ngãi</p>
+            <p style="margin: 0 0 0.5rem 0;"><strong>Sản phẩm chính:</strong> Hành, tỏi, khoai</p>
+            <p style="color: #666; font-size: 0.95rem;">Nông hộ đặc biệt trong trồng hành, tỏi, khoai tây theo tiêu chuẩn VietGAP.</p>
+            <a href="#" class="btn btn-primary" style="width: 100%; text-align: center; margin-top: 1rem; font-size: 0.9rem;">Xem hồ sơ</a>
+          </div>
+        </div>
+
+        <div class="card" data-searchable="Tổ hợp tác Sông Ngoài - Rau sạch Kiên Giang">
+          <div style="background: linear-gradient(135deg, #E91E63, #C2185B); color: #fff; padding: 1.5rem;">
+            <div style="font-size: 2rem; margin-bottom: 0.5rem;">🍆</div>
+            <h4 style="margin: 0; color: #fff;">Tổ hợp tác Sông Ngoài</h4>
+            <p style="margin: 0.5rem 0 0; color: #f8bbd0; font-size: 0.9rem;">Đồng bằng sông Cửu Long</p>
+          </div>
+          <div class="card-body">
+            <p style="margin: 0 0 0.5rem 0;"><strong>Vùng:</strong> Kiên Giang</p>
+            <p style="margin: 0 0 0.5rem 0;"><strong>Sản phẩm chính:</strong> Cà tím, súp lơ, bắp</p>
+            <p style="color: #666; font-size: 0.95rem;">Tổ hợp tác 40 nông hộ sản xuất rau đa dạng, cung cấp ổn định hàng năm.</p>
+            <a href="#" class="btn btn-primary" style="width: 100%; text-align: center; margin-top: 1rem; font-size: 0.9rem;">Xem hồ sơ</a>
+          </div>
+        </div>
+      </div>
+
+      <div style="text-align: center; margin-top: 3rem;">
+        <p style="color: #666; margin-bottom: 1rem;">Tổng cộng 500+ nông hộ thành viên trong hệ thống</p>
+        <a href="../" class="btn btn-outline">← Quay lại trang chủ</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-content">
+      <div class="footer-section">
+        <h4>📍 Thông tin liên hệ</h4>
+        <p style="margin-bottom: 0.5rem;"><strong>Địa chỉ:</strong> 123 Đường Nông lâm, Quận 1, TP.HCM</p>
+        <p style="margin-bottom: 0.5rem;"><strong>Hotline:</strong> 1800-0000</p>
+        <p><strong>Email:</strong> <a href="mailto:info@htx.vn">info@htx.vn</a></p>
+      </div>
+
+      <div class="footer-section">
+        <h4>🔗 Liên kết nhanh</h4>
+        <ul>
+          <li><a href="gioi-thieu.html">Giới thiệu</a></li>
+          <li><a href="thanh-vien.html">Thành viên</a></li>
+          <li><a href="san-pham.html">Sản phẩm</a></li>
+          <li><a href="lien-he.html">Liên hệ</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-section">
+        <h4>📄 Chính sách</h4>
+        <ul>
+          <li><a href="#">Điều khoản sử dụng</a></li>
+          <li><a href="#">Chính sách bảo mật</a></li>
+          <li><a href="#">Chính sách hoàn trả</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-section">
+        <h4>🌐 Kết nối</h4>
+        <p>
+          <a href="#">Facebook</a> | 
+          <a href="#">Instagram</a> | 
+          <a href="#">YouTube</a>
+        </p>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2024 Hợp tác xã - Sản phẩm Nông nghiệp Sạch. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+  <script>
+    // Tìm kiếm thành viên
+    const searchInput = document.getElementById('search');
+    if (searchInput) {
+      searchInput.addEventListener('input', (e) => {
+        const keyword = e.target.value.toLowerCase();
+        const cards = document.querySelectorAll('#members-list .card');
+        cards.forEach(card => {
+          const text = card.getAttribute('data-searchable').toLowerCase();
+          card.style.display = text.includes(keyword) ? '' : 'none';
+        });
+      });
+    }
+  </script>
+</body>
+</html>
